@@ -1,0 +1,24 @@
+fastapi
+uvicorn
+sqlalchemy
+mysql-connector-python
+passlib[bcrypt]
+python-jose[cryptography]
+python-multipart
+pydantic
+pydantic-settings
+streamlit
+streamlit-option-menu
+plotly
+requests
+python-dotenv
+pandas
+numpy
+scikit-learn
+opencv-python-headless
+Pillow
+groq
+# Note: For full production, tensorflow or pytorch would be required.
+# tensorflow
+# torch
+# torchvision

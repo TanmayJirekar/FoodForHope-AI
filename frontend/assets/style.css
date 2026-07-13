@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    color: #e2e8f0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    color: #f8fafc;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+}
+
+/* Glassmorphism Cards */
+.feature-card, .glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(167, 139, 250, 0.5); /* Subtle purple glow */
+}
+
+/* Hero Section */
+.hero-container {
+    background: linear-gradient(90deg, #4f46e5, #9333ea);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-container h3 {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* Custom Buttons */
+.stButton>button {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 10px 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+.stButton>button:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 12px rgba(139, 92, 246, 0.4) !important;
+}
+
+/* Inputs and Forms */
+.stTextInput>div>div>input, 
+.stNumberInput>div>div>input,
+.stSelectbox>div>div>select,
+.stTextArea>div>div>textarea {
+    background: rgba(15, 23, 42, 0.6) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+}
+
+.stTextInput>div>div>input:focus,
+.stTextArea>div>div>textarea:focus {
+    border-color: #8b5cf6 !important;
+    box-shadow: 0 0 0 1px #8b5cf6 !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Sidebar Override */
+[data-testid="stSidebar"] {
+    background-color: rgba(15, 23, 42, 0.9) !important;
+    backdrop-filter: blur(10px) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
